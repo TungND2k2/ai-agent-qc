@@ -1,9 +1,9 @@
 module.exports = {
   apps: [
     {
-      name: 'dev:all',
-      script: './dev-all.sh',
-      interpreter: 'bash',
+      name: 'ui-qc-agent',
+      script: 'npm',
+      args: 'run dev:all',
       env: {
         NODE_ENV: 'development',
       },

@@ -12,6 +12,7 @@
     "dev:backend": "ts-node apps/agent-backend/src/main.ts",
     "dev:puppeteer": "ts-node apps/puppeteer-client/src/index.ts",
     "dev:all": "concurrently \"npm run dev:bot\" \"npm run dev:backend\" \"npm run dev:puppeteer\"",
+    "build": "tsc -b",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
