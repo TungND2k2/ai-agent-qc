@@ -1,0 +1,28 @@
+{
+  "name": "ui-qc-agent",
+  "version": "1.0.0",
+  "description": "Hệ thống tự động kiểm thử UI theo góc nhìn người dùng, sử dụng bot Discord để điều khiển một chuỗi xử lý gồm backend, trình duyệt mô phỏng bằng Puppeteer và GPT-4 Vision để phân tích ảnh giao diện.",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:bot": "ts-node apps/discord-bot/src/main.ts",
+    "dev:backend": "ts-node apps/agent-backend/src/main.ts",
+    "dev:puppeteer": "ts-node apps/puppeteer-client/src/index.ts",
+    "dev:all": "concurrently \"npm run dev:bot\" \"npm run dev:backend\" \"npm run dev:puppeteer\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "concurrently": "^8.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "openai": "^5.5.1"
+  }
+}

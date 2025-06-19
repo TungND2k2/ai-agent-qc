@@ -1,0 +1,13 @@
+{
+  "name": "agent-backend",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "dependencies": {
+    "@nestjs/core": "^10.2.7",
+    "@nestjs/common": "^10.2.7",
+    "@nestjs/platform-express": "^10.2.7",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
